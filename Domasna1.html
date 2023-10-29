@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css"
+        href = "domasna2.css">
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table style = "width:100%">
+            <tr>
+                <th colspan = "2">Pizza Shop</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <p><label>
+                        <input name = "name"
+                        type = "text"
+                        size = "25"
+                        maxlength = "30">
+                    </label></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td>
+                    <form>
+                        <label class = "block"><input type = "radio" name = "radgroup" value = "A">Supreme</label><br>
+                        <label class = "block"><input type = "radio" name = "radgroup" value = "B">Hawaiian</label><br>
+                        <label class = "block"><input type = "radio" name = "radgroup" value = "C">Vegetarian</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td>
+                    <select>
+                        <option value = "tomato">Tomato</option>
+                        <option value = "ketchup">Ketchup</option>
+                        <option value = "pepperoni">Pepperoni</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td>
+                    <input type = "checkbox" id = "extracheese" name="extracheese" value="Extra Cheese">
+                    <label for = "extracheese"> Extra Cheese</label>
+                    <input type = "checkbox" id = "glutenfreebase" name="glutenfreebase" value="Gluten Free Base">
+                    <label for = "glutenfreebase"> Gluten Free Base</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <label for = "deliveryinstructions">Delivery Instructions:</label><br>
+                    <textarea id = "deliveryinstructions" name = "deliveryinstructions" rows = "3" cols = "50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2">
+                    <input type = "submit" value = "Send My Order">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

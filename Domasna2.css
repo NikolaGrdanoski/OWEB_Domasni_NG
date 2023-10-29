@@ -1,0 +1,64 @@
+table {background-color: rgb(0, 162, 255);
+       color: white;
+       text-shadow: 1px 1px 1px gold}
+
+body{
+    font-family: Arial, Tahoma, sans-serif;
+    background-position: 100% center;
+    background-repeat: repeat;
+    background-origin:content-box;
+    background-image: url(flying-slice-pizza-cartoon-vector-illustration-fast-food-concept-isolated-vector-flat-cartoon-style_138676-1934.webp)}
+
+select:hover { color: rgb(247, 0, 255); }
+
+label:hover {color: rgb(236, 58, 58);}
+
+input:hover {color: blueviolet;}
+    
+textarea{position: relative;
+    left: 5%;
+    width: 90%;
+    background-image: linear-gradient(white, lime);
+    border-radius: 15px;}
+        
+input.text{position: relative;
+    border-radius: 9px;
+    background-image: radial-gradient(yellow, white);}
+
+thead {
+background-color: red; 
+animation-name: flash;
+animation-duration: 100ms;
+animation-iteration-count: infinite;
+animation-direction: alternate;}
+  
+@keyframes flash {
+    0% {background-color: lime;}
+    25% {background-color: yellow;}
+    50% {background-color: purple;}
+    75% {background-color: blueviolet;}
+    100% {background-color: lime}}
+
+    input.submit {
+        color: rgb(0, 255, 64); 
+        animation-name: moving;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        text-shadow: gold}
+
+h2.move {
+    position: relative;
+    color: red; 
+    text-shadow: 2px 2px black;
+    animation-name: moving;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;}
+
+    @keyframes moving {
+        0% {color: lime; left:5%;}
+        25% {color: yellow; left:35%;}
+        50% {color: purple; left:70%;}
+        75% {color: blueviolet; left:35%;}
+        100% {color: lime; left:5%;}}
