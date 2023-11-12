@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf -8">
+        <title> NotAmazon </title>
+        <!-- <link rel = "stylesheet" type = "text/css" href = -->
+    </head>
+
+    <body>
+        <header class = "main">
+            <img src = "NotAmazonLogo.png" alt = "Logo">
+        </header>
+
+        <nav>
+            <a href = "Proektna1.html#home">Home</a>
+            <a href = "Proektna1.html#categories">Categories</a>
+            <a href = "Proektna1.html#productpictures">Product Pictures</a>
+            <a href = "Proektna1.html#feedback">Feedback</a>
+            <a href = "Proektna1.html#contact">Contact</a>
+        </nav>
+
+        <section class = "home" id = "home"></section>
+
+        <section class = "categories" id = "categories">
+            <div class = "row">
+                <div class = "column">
+                    <div class = "card">
+                        <h3>Category 1</h3>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "column">
+                    <div class = "card">
+                        <h3>Category 1</h3>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "column">
+                    <div class = "card">
+                        <h3>Category 1</h3>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "pictures" id = "pictures">
+            pictures
+        </section>
+
+        <section class = "survey" id = "survey">
+            <form method = "post" action = "">
+                <input type = "hidden" name = "recipient" value = "notamazon@mail.com">
+                <input type = "hidden" name = "subject" value = "Feedback Form">
+                <table border = 2 class = "survey" style = "width:100%">
+                    <thead class = "feedback">
+                        <th colspan = "">Send your feedback</th>
+                    </thead>
+
+                    <tbody class = "feedback">
+                        <tr>
+                            <td class = "radiogroup">
+                                How would you rate our website design? (From 1 to 5)
+                                <ol class = "radio_feedback">
+                                    <li>
+                                        <label for = "radio_design_5"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design5">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_4"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design4">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_3"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design3">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_2"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design2">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_1"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design1">
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for = "impression">What did you like most about our website</label>
+                                <select name = "impression" id = "impression">
+                                    <option value = "default">Choose</option>
+                                    <option value = "1">The design</option>
+                                    <option value = "2">Ease of use</option>
+                                    <option value = "3">Products available</option>
+                                    <option value = "4">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for = "futureadditions">What would you like to see us add?</label> <br>
+                                <textarea name = "futureadditions" id = "futureadditions" cols = "20" rows = "10" class = "futureadditions"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+    </body>
+</html>
