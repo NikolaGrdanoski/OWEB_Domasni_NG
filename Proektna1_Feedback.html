@@ -4,7 +4,7 @@
     <head>
         <meta charset = "utf -8">
         <title> NotAmazon Feedback </title>
-        <!-- <link rel = "stylesheet" type = "text/css" href = -->
+        <link rel = "stylesheet" type = "text/css" href = "Proektna1_Feedback.css">
     </head>
 
     <body>
@@ -30,6 +30,20 @@
                     </thead>
 
                     <tbody class = "feedback">
+                        <tr>
+                            <td>
+                                <label for = "location"> From where are you visiting? </label> <br>
+                                <textarea name = "location" id = "location" cols = "20" rows = "1" class = "location"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for = "device"> From what device are you accessing our site? </label> <br>
+                                <textarea name = "device" id = "device" cols = "20" rows = "1" class = "device"></textarea>
+                            </td>
+                        </tr>
+
                         <tr>
                             <td class = "radiogroup">
                                 How would you rate our website design? (From 1 to 5)
@@ -73,13 +87,24 @@
 
                         <tr>
                             <td>
-                                <label for = "futureadditions">What would you like to see us add?</label> <br>
-                                <textarea name = "futureadditions" id = "futureadditions" cols = "20" rows = "10" class = "futureadditions"></textarea>
+                                <label for = "location">What would you like to see us add?</label> <br>
+                                <textarea name = "location" id = "location" cols = "20" rows = "10" class = "location"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button type="submit"> Submit </button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </form>
         </section>
+
+        <footer>
+            <p> Phone number: 123 456 789 </p>
+            <p> Mail:<a href = "Mail: notamazon@gmail.com"> notamazon@gmail.com </a></p>
+        </footer>
     </body>
 </html>
