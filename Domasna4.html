@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#imeInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+        $(this).toggle($(this).children("#ime").text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+
+    $(document).ready(function(){
+    $("#prezimeInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+        $(this).toggle($(this).children("#prezime").text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+
+    $(document).ready(function(){
+    $("#mailInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+        $(this).toggle($(this).children("#mail").text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+    </script>
+
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+    </head>
+    <body>
+
+        <h2>Filterable Table</h2>
+        <p>Type something in the input field to search the table for first imes, last imes or emails:</p>  
+        <input id="imeInput" type="text" placeholder="Search ime..">
+        <input id="prezimeInput" type="text" placeholder="Search Last ime..">
+        <input id="mailInput" type="text" placeholder="Search mail..">
+        <br><br>
+
+        <table>
+        <thead>
+        <tr>
+            <th>Firstime</th>
+            <th>prezime</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <tr>
+            <td id="ime">John</td>
+            <td id="prezime">Doe</td>
+            <td id="mail">john@example.com</td>
+        </tr>
+        <tr>
+            <td id="ime">Mary</td>
+            <td id="prezime">Moe</td>
+            <td id="mail">mary@mail.com</td>
+        </tr>
+        <tr>
+            <td id="ime">July</td>
+            <td id="prezime">Dooley</td>
+            <td id="mail">july@greatstuff.com</td>
+        </tr>
+        <tr>
+            <td id="ime">Anja</td>
+            <td id="prezime">Ravendale</td>
+            <td id="mail">a_r@test.com</td>
+        </tr>
+        </tbody>
+        </table>
+        
+        <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+
+    </body>
+</html>
