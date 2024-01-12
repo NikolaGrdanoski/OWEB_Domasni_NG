@@ -1,0 +1,15 @@
+<div *ngIf="predmet" [ngClass]="klasi()">
+    <div class="item-title" style="font-size: 30px; font: sans-serif;">
+        <p>{{indeks + 1 + " " + predmet.name}}</p>
+    </div>
+    <img
+        *ngIf="predmet?.iconUrl"
+        width="300"
+        [src]="predmet.iconUrl"
+        alt="Samsung Galaxy S23"
+    />
+    <div class="item-description">
+        {{predmet.description}}
+    </div>
+    <button (click)="OnItemViewed()">View</button>
+</div>
