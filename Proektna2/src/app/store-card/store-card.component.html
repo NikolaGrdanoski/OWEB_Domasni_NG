@@ -1,4 +1,4 @@
-<div *ngIf="predmet" [ngClass]="klasi()">
+<div [ngClass]="klasi()" *ngIf="predmet.availability == true">
     <div class="item-title" style="font-size: 30px; font: sans-serif;">
         <p>{{indeks + 1 + " " + predmet.name}}</p>
     </div>

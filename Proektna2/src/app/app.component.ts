@@ -19,5 +19,6 @@ export class AppComponent {
 
   onAppViewed(c: Event) {
     console.log("App " + c);
+    var link = "https://www.amazon.com/SAMSUNG-Smartphone-Unlocked-Android-Processor/dp/B0CMDTFNGM/ref=sr_1_3?keywords=samsung%2Bs24&qid=1707668959&sr=8-3&th=1";
   }
 }

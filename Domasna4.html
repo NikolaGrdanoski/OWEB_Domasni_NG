@@ -4,30 +4,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-    $("#imeInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
+      $("#imeInput").on("keyup", function() {
+        var value1 = $(this).val().toLowerCase();
         $("#myTable tr").filter(function() {
-        $(this).toggle($(this).children("#ime").text().toLowerCase().indexOf(value) > -1)
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
-    });
-    });
-
-    $(document).ready(function(){
-    $("#prezimeInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
+      });
+      $("#prezimeInput").on("keyup", function() {
+        var value2 = $(this).val().toLowerCase();
         $("#myTable tr").filter(function() {
-        $(this).toggle($(this).children("#prezime").text().toLowerCase().indexOf(value) > -1)
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
-    });
-    });
-
-    $(document).ready(function(){
-    $("#mailInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
+      });
+      $("#mailInput").on("keyup", function() {
+        var value3 = $(this).val().toLowerCase();
         $("#myTable tr").filter(function() {
-        $(this).toggle($(this).children("#mail").text().toLowerCase().indexOf(value) > -1)
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
-    });
+      });
     });
     </script>
 

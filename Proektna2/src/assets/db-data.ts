@@ -3,12 +3,12 @@ import { Item } from 'C:/Users/Nikola/Desktop/FEIT/V_Semestar/OWEB/OWEB_Domasni_
 export const ITEMS: any = [
   {
     id: 1,
-    name: 'Samsung Galaxy S23',
-    description: 'The Samsung Galaxy S23 is a flaghsip phone from Samsung',
-    iconUrl: 'https://images.samsung.com/uk/smartphones/galaxy-s23/buy/02_Image_Carousel/02-1_Group_KV_Basic_Color/S23Plus-group_kv_MO.jpg',
+    name: 'Samsung Galaxy S24',
+    description: 'The Samsung Galaxy S24 is a flaghsip phone from Samsung',
+    iconUrl: 'https://m.media-amazon.com/images/I/71Ua9NgQgWL._AC_SX679_.jpg',
     category: 'electronics',
     availability: true,
-    price: 800,
+    price: 860,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const ITEMS: any = [
     description: 'The Dell Latitude is a great laptop from Dell',
     iconUrl: 'https://m.media-amazon.com/images/I/71zkzCckCYL._AC_UL320_.jpg',
     category: 'electronics',
-    availability: true,
+    availability: false,
     price: 299.95,
   },
 ];
