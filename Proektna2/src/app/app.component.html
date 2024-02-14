@@ -7,18 +7,125 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<main class="main" style="background-color: white;">
-    <div class="predmeti">
-        <app-store-card
-            *ngFor="let p of predmeti; index as i; last as posleden; first as prv"
-            [class.is-last]="posleden"
-            [class.is-first]="prv"
-            (click)="onAppViewed($event)"
-            [predmet]="p"
-            [indeks]="i"
-        ></app-store-card>
-    </div>
-</main>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#submit").click(function() {
+                window.alert("Yes");
+            })
+        });
+    </script>
+</head>
+
+<body style="background-color: gold;">
+    <main class="main" style="background-color: gold;">
+        <div class="predmeti">
+            <app-store-card
+                *ngFor="let p of predmeti; index as i; last as posleden; first as prv"
+                [class.is-last]="posleden"
+                [class.is-first]="prv"
+                (click)="onAppViewed($event)"
+                [predmet]="p"
+                [indeks]="i"
+            ></app-store-card>
+        </div> <br>
+
+        <section class = "survey" id = "survey">
+            <form>
+                <input type = "hidden" name = "recipient" value = "notamazon@mail.com">
+                <input type = "hidden" name = "subject" value = "Feedback Form">
+                <table border = 1 class = "survey" style = "width:100%">
+                    <thead class = "feedback">
+                        <th colspan = "" style="border-radius: 4px">Send your feedback</th>
+                    </thead>
+
+                    <tbody class = "feedback">
+                        <tr>
+                            <td style="border-radius: 4px">
+                                <label for = "location"> From where are you visiting? </label> <br>
+                                <textarea name = "location" id = "location" cols = "20" rows = "1" class = "location"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border-radius: 4px">
+                                <label for = "device"> From what device are you accessing our site? </label> <br>
+                                <textarea name = "device" id = "device" cols = "20" rows = "1" class = "device"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "radiogroup" style="border-radius: 4px">
+                                How would you rate our website design? (From 1 to 5)
+                                <ol class = "radio_feedback">
+                                    <li>
+                                        <label for = "radio_design_5"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design5">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_4"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design4">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_3"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design3">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_2"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design2">
+                                    </li>
+                                    <li>
+                                        <label for = "radio_design_1"></label>
+                                        <input type = "radio" name="radio_design" id = "radio_design1">
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border-radius: 4px">
+                                <label for = "impression">What did you like most about our website</label>
+                                <select name = "impression" id = "impression">
+                                    <option value = "default">Choose</option>
+                                    <option value = "1">The design</option>
+                                    <option value = "2">Ease of use</option>
+                                    <option value = "3">Products available</option>
+                                    <option value = "4">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border-radius: 4px">
+                                <label for = "location">What would you like to see us add?</label> <br>
+                                <textarea name = "location" id = "location" cols = "20" rows = "10" class = "location"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="border-radius: 4px">
+                                <button type="submit" id="submit"> Submit </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p> <br>
+
+        <footer>
+            <p> Phone number: 123 456 789 </p>
+            <p> Mail:<a href = "Mail: notamazon@gmail.com"> notamazon&#64;gmail.com </a> </p>
+            <p> Facebook:<a href = "https://www.facebook.com/Amazon/"> https://www.facebook.com/Amazon/ </a></p>
+            <p> X (Twitter):<a href = "https://www.twitter.com/Amazon/"> https://www.twitter.com/Amazon/ </a></p>
+        </footer>
+    </main>
+</body>
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

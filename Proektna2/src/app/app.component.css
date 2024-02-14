@@ -5,3 +5,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.survey {
+    border-radius: 7px;
+}
+
+.feedback {
+    border-radius: 7px;
+    background-color: rgb(255, 220, 19);
+}
